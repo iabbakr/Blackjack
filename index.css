@@ -1,9 +1,18 @@
-body{
+body {
     margin: 0;
 }
 .container{
 
 }
-h1{
-    color: yellow;
+h1 {
+    color: goldenrod;
+}
+#message-el {
+
+}
+#card-el{
+
+}
+#sum-el{
+    
 }
