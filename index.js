@@ -21,3 +21,10 @@ if (sum <= 20){
     console.log("You are out of the game");
     isAlive = false;
 }
+
+function start(){
+
+};
+function card(){
+    
+}
