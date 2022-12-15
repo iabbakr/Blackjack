@@ -25,3 +25,13 @@ h1 {
 #sum-el{
 
 }
+.btn-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.btn{
+    background: goldenrod;
+    color: green;
+    padding: 5px 10px;
+}
