@@ -16,6 +16,11 @@ let hasBlackJack = false;
 let message = "";
 
 function start(){
+   render(); 
+};
+
+function render(){
+    cardEl.textContent = "cards: " + firstCard+ " "+ secondCard;
     sumEl.textContent += sum;
     if (sum <= 20){
         message = "Do you want to draw a new card?";
@@ -33,6 +38,8 @@ function start(){
 
 };
 function card(){
-
+    console.log();
+    sum += card + 6;
+    render()
 };
 
