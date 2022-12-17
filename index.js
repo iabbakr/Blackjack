@@ -9,7 +9,6 @@ cardEl.textContent += firstCard;
 cardEl.textContent += secondCard;
 
 let sum = firstCard + secondCard;
-sumEl.textContent += sum;
 
 let isAlive = true;
 let hasBlackJack = false;
