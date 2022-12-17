@@ -3,8 +3,8 @@ let messageEl = document.getElementById("message-el");
 let sumEl = document.querySelector("#sum-el");
 
 
-let firstCard = 2;
-let secondCard = 4;
+let firstCard = 10;
+let secondCard = 11;
 cardEl.textContent += firstCard;
 cardEl.textContent += secondCard;
 
