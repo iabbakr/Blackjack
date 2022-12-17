@@ -5,8 +5,7 @@ let sumEl = document.querySelector("#sum-el");
 
 let firstCard = 10;
 let secondCard = 11;
-cardEl.textContent += firstCard;
-cardEl.textContent += secondCard;
+let cards = [firstCard, secondCard];
 
 let sum = firstCard + secondCard;
 
@@ -20,7 +19,7 @@ function start(){
 };
 
 function render(){
-    cardEl.textContent = "cards: " + firstCard+ " "+ secondCard;
+    cardEl.textContent = "cards: " + cards[0]+ " "+ cards[1];
     sumEl.textContent += sum;
     if (sum <= 20){
         message = "Do you want to draw a new card?";
@@ -38,8 +37,8 @@ function render(){
 
 };
 function card(){
-    console.log();
-    sum += card + 6;
+    let card = 6;
+    sum += card; 
     render()
 };
 
