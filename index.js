@@ -39,7 +39,8 @@ function render(){
 function card(){
     let card = 6;
     sum += card;
-    cards.pop(card) ;
+    cards.push(card) ;
+    console.log(cards);
     render();
 };
 
