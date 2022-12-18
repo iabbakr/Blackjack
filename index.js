@@ -19,7 +19,7 @@ function start(){
 };
 
 function render(){
-    cardEl.textContent = "cards: " + cards[0]+ " "+ cards[1];
+    cardEl.textContent = "cards: " + cards[0]+ " "+ cards[1 ];
     sumEl.textContent += sum;
     if (sum <= 20){
         message = "Do you want to draw a new card?";
@@ -38,7 +38,8 @@ function render(){
 };
 function card(){
     let card = 6;
-    sum += card; 
-    render()
+    sum += card;
+    cards.pop(card) ;
+    render();
 };
 
