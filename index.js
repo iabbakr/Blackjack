@@ -21,7 +21,7 @@ function start(){
 function render(){
     cardEl.textContent = "cards: ";
     for(let i = 0; i<=cards.length; i++){
-        cardEl.textContent += card[i] + " "; 
+        cardEl.textContent += cards[i] + " "; 
     };
     sumEl.textContent += sum;
     if (sum <= 20){
