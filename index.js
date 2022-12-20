@@ -16,8 +16,7 @@ let message = "";
 let randomNumber = Math.floor(Math.random() * 6);
 
 function rollDice(){
-    let random = Math.floor(Math.random()*6+1);
-    return random;
+    return Math.floor(Math.random()*6) + 1;
 };
 
 function start(){
