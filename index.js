@@ -16,7 +16,14 @@ let message = "";
 let randomNumber = Math.floor(Math.random() * 6);
 
 function rollDice(){
-    return Math.floor(Math.random()*6) + 1;
+    let num = Math.floor(Math.random()*6) + 1;
+    if(num === 1){
+        return 11;
+    }else if (num > 10){
+        return 10;
+    }else{
+        return num;
+    }
 };
 
 function start(){
