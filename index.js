@@ -17,7 +17,7 @@ let randomNumber = Math.random();
 
 function getRandom(){
     return randomNumber;
-}
+};
 
 function start(){
    render();  
