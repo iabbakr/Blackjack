@@ -13,10 +13,10 @@ let isAlive = true;
 let hasBlackJack = false;
 
 let message = "";
-let randomNumber = Math.random();
+let randomNumber = Math.floor(Math.random() * 6);
 
 function getRandom(){
-    return randomNumber;
+    console.log(randomNumber);
 };
 
 function start(){
