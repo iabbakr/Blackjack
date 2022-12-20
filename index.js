@@ -17,13 +17,13 @@ let randomNumber = Math.floor(Math.random() * 6);
 
 function rollDice(){
     let num = Math.floor(Math.random()*6) + 1;
-    if(num === 1){
-        return 11;
-    }else if (num > 10){
+    if(num > 10){
         return 10;
+    }else if (num === 1){
+        return 11;
     }else{
         return num;
-    }
+    };
 };
 
 function start(){
