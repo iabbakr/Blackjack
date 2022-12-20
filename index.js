@@ -3,8 +3,8 @@ let messageEl = document.getElementById("message-el");
 let sumEl = document.querySelector("#sum-el");
 
 
-let firstCard = getRandom();
-let secondCard = getRandom();
+let firstCard = rollDice();
+let secondCard = rollDice();
 let cards = [firstCard, secondCard];
 
 let sum = firstCard + secondCard;
@@ -15,8 +15,9 @@ let hasBlackJack = false;
 let message = "";
 let randomNumber = Math.floor(Math.random() * 6);
 
-function getRandom(){
-    console.log(randomNumber);
+function rollDice(){
+    let random = Math.floor(Math.random()*6+1);
+    return random;
 };
 
 function start(){
@@ -45,7 +46,7 @@ function render(){
 
 };
 function card(){
-    let card = getRandom();
+    let card = rollDice();
     sum += card;
     cards.push(card) ;
     console.log(cards);
