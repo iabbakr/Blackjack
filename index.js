@@ -1,21 +1,20 @@
+let player = {
+    name: "abubakar",
+    chips: 234
+}
+let cards = [];
+let sum = 0;
+let isAlive = false;
+let hasBlackJack = false;
+let message = "";
 let cardEl = document.getElementById("card-el");
 let messageEl = document.getElementById("message-el");
 let sumEl = document.querySelector("#sum-el");
+let playerEl = document.querySelector("#player-el");
 
-
-
-let cards = [];
-
-let sum = 0;
-
-let isAlive = false;
-let hasBlackJack = false;
-
-let message = "";
-console.log(cards);
 
 function rollDice(){
-    let num = Math.floor(Math.random()*6) + 1;
+    let num = Math.floor(Math.random()*13) + 1;
     if(num > 10){
         return 10;
     }else if (num === 1){
