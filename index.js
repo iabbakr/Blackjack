@@ -56,10 +56,14 @@ function render(){
 
 };
 function card(){
-    let card = rollDice();
-    sum += card;
-    cards.push(card) ;
-    console.log(cards);
-    render();
+    if (isAlive === true && hasBlackJack === true){
+    
+        let card = rollDice();
+        sum += card;
+        cards.push(card) ;
+        console.log(cards);
+        render();
+    };
 };
+    
 
