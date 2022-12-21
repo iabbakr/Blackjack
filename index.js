@@ -1,7 +1,7 @@
 let player = {
     name: "abubakar",
     chips: 234
-}
+};
 let cards = [];
 let sum = 0;
 let isAlive = false;
@@ -9,8 +9,8 @@ let hasBlackJack = false;
 let message = "";
 let cardEl = document.getElementById("card-el");
 let messageEl = document.getElementById("message-el");
-let sumEl = document.querySelector("#sum-el");
-let playerEl = document.querySelector("#player-el");
+let sumEl = document.getElementById("#sum-el");
+let playerEl = document.getElementById("#player-el");
 
 playerEl.textContent = player.name + ": $" + player.chips;
 function rollDice(){
