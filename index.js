@@ -12,7 +12,7 @@ let messageEl = document.getElementById("message-el");
 let sumEl = document.querySelector("#sum-el");
 let playerEl = document.querySelector("#player-el");
 
-
+playerEl.textContent = player.name + ": $" + player.chips;
 function rollDice(){
     let num = Math.floor(Math.random()*13) + 1;
     if(num > 10){
