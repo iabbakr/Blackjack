@@ -42,21 +42,24 @@ function render(){
     if (sum <= 20){
         message = "Do you want to draw a new card?";
         messageEl.textContent += message;
+        isAlive=true;
+        hasBlackJack=false;
         
     }else if (sum === 21){
         message = "Yes! ";
         hasBlackJack = true;
         messageEl.textContent += message;
+        isAlive= true;
     }else {
         message = "You are out of the game";
         isAlive = false;
         messageEl.textContent += message;
+        hasBlackJack=false;
     };
 
 };
 function card(){
     if (isAlive === true && hasBlackJack === true){
-    
         let card = rollDice();
         sum += card;
         cards.push(card) ;
