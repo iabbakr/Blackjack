@@ -52,7 +52,7 @@ function render(){
 
 };
 function card(){
-    if (isAlive === true && hasBlackJack === FontFaceSetLoadEvent){
+    if (isAlive === true && hasBlackJack === false){
         let card = rollDice();
         sum += card;
         cards.push(card);
